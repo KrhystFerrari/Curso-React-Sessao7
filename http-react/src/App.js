@@ -56,7 +56,7 @@ function App() {
     setPrice("");
   };
 
-  /* 9 - desafio */
+  {/* 9 - Desafio */}
   const handleRemove = (id) => {
     httpConfig(id, "DELETE");
   };
@@ -73,7 +73,7 @@ function App() {
             <li key={product.id}>
               {product.name} - R$: {product.price}
               {/* 9 - desafio */}
-              <button onClick={() => handleRemove(product.id)}>Excluir</button>
+              <button className="del" onClick={() => handleRemove(product.id)}>Excluir</button>
             </li>
           ))}
       </ul>
