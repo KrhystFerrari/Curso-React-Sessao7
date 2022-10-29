@@ -58,7 +58,7 @@ export const useFetch = (url) => {
 
         setMethod(null);
 
-        // 8 - tratando erros
+        // 8 - Tratando erros
         setError(null);
       } catch (error) {
         console.log(error.message);
